@@ -70,14 +70,10 @@ history = model.fit(
     validation_data=val_generator
 )
 
-# Ran in a separate .py file for performance purposes
-
 test_loss, test_acc = model.evaluate(test_generator)
 print(f"Test accuracy: {test_acc}, Test loss: {test_loss}")
 
 model.save('10epochs.h5')
-
-# Ran in a separate .py file for performance purposes
 
 plt.figure(figsize=(12, 5))
 
